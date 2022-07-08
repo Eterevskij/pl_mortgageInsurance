@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'antd/dist/antd.css';
 import './App.css';
+
+import MortgageInsurance from './components/MortgageInsurance';
+
+const insuranceCompanies = [
+  {name: 'Альфа страхование', price: 6180, options: [{name:  'Жизнь', value: 13000}, {name:  'Имущество', value: 13000},{name: 'Титульное', value: 13000},{name:  'Агентское вознагр.', value: 13000}]},
+  // {name: 'Росгосстрах', price: 6743, options: [{name:  'Жизнь', value: 13000}, {name:  'Имущество', value: 13000},{name: 'Титульное', value: 13000},{name:  'Агентское вознагр.', value: 13000}]}
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="container">
+
+        <MortgageInsurance insuranceCompanies={insuranceCompanies} />
+
+      </div>
+
     </div>
   );
 }

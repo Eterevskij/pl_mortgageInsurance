@@ -1,0 +1,202 @@
+.organizationCard {
+    background: #fff;
+    border: 1px solid #EDEDED;
+    padding: 32px 40px;
+    border-radius: 16px;
+    transition: 0.15s all ease-in-out;
+}
+
+.organizationCard+.organizationCard {
+    margin-top: 16px;
+}
+
+.topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.totalTitle {
+    color: #7A7A7A;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 11px;
+}
+
+.totalValue {
+    color: #2B2B2B;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.divider {
+    background: #E8E8E8;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.optionItem+.optionItem {
+    margin-left: 40px;
+}
+
+.optionValue {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+.optionName {
+    color: #7a7a7a;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.submitButton {
+    background: #4db663 !important;
+    color: #fff !important;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: none !important;
+}
+
+.submitButton span {
+    margin-right: 12px;
+}
+
+.bottomPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organizationCard:hover {
+    border: 1px solid #4DB663;
+    box-shadow: 0px 0px 5px rgba(77, 182, 99, 0.56);
+}
+
+.divider.mobile {
+    display: none;
+}
+
+.total.mobile {
+    display: none;
+}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1280px) {
+
+    .optionValue {
+        font-size: 16px;
+    }
+
+    .optionItem + .optionItem {
+        margin-left: 32px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .organizationCard {
+        padding: 32px;
+    }
+
+    .options {
+        align-items: normal;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .bottomPart {
+        flex-wrap: wrap;
+    }
+
+    .submitButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .optionItem + .optionItem {
+        margin-left: 48px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .organizationCard {
+        padding: 24px;
+    }
+
+    .options {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .optionItem + .optionItem {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .optionItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .divider.mobile {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .total.desktop {
+        display: none;
+    }
+
+    .total.mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .optionName {
+        margin-bottom: 0;
+    }
+
+    .divider {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .organizationCard {
+        padding: 24px 16px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .totalValue {
+        font-size: 18px;
+    }
+
+}
